@@ -1,0 +1,40 @@
+{
+  "name": "ShonenPlays",
+  "displayName": "ShonenPlays",
+  "expo": {
+    "splash": {
+      "image": "./src/assets/splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#e63c4b"
+    },
+    "packagerOpts": {
+      "config": "metro.config.js",
+      "sourceExts": [
+        "expo.ts",
+        "expo.tsx",
+        "expo.js",
+        "expo.jsx",
+        "ts",
+        "tsx",
+        "js",
+        "jsx",
+        "json",
+        "wasm",
+        "svg"
+      ]
+    },
+    "name": "ShonenPlays",
+    "slug": "ShonenPlays",
+    "version": "1.0.0",
+    "icon": "./src/assets/icon.png",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "bundleIdentifier": "com.mrizkiaiman.ShonenPlays"
+    },
+    "android": {
+      "package": "com.mrizkiaiman.ShonenPlays"
+    }
+  }
+}

@@ -1,0 +1,5 @@
+export {default as EmptyStateCart} from './cart.svg'
+export {default as EmptyStateOrders} from './orders.svg'
+export {default as EmptyStateProducts} from './products.svg'
+export {default as EmptyStateAddress} from './shippingAddress.svg'
+export {default as EmptyStateWishlist} from './wishlist.svg'

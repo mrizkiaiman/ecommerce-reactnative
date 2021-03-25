@@ -1,0 +1,5 @@
+export {default as getAddress_API} from './get'
+export {default as addAddress_API} from './add'
+export {default as editAddress_API} from './edit'
+export {default as deleteAddress_API} from './delete'
+export {default as defaultAddress_API} from './updateDefault'

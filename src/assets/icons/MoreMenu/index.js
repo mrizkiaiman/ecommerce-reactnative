@@ -1,0 +1,6 @@
+export {default as EditProfileIcon} from './editProfile.svg'
+export {default as ChangePasswordIcon} from './changePassword.svg'
+export {default as WishlistIcon} from './wishlist.svg'
+export {default as ShippingAddressIcon} from './shippingAddress.svg'
+export {default as HelpIcon} from './help.svg'
+export {default as LogoutIcon} from './logout.svg'
