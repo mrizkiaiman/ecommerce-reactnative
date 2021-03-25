@@ -1,5 +1,5 @@
 import React, {useContext} from 'react'
-import {View, FlatList} from 'react-native'
+import {View, FlatList, ActivityIndicator} from 'react-native'
 //Styling
 import styles from './style'
 import {tailwind} from '../../style/tailwind'
@@ -16,6 +16,14 @@ export default ({navigation, route: {params}}) => {
   const {bestSeller, promoProducts} = useContext(StaticContext)
   const productsByCategory = useAPI(getProductsByCategory_API, categoryId)
   const navigateToMarket = () => navigation.navigate('Market')
+
+  if (productsByCategory.loading) {
+    return (
+      <View style={{flex: 1, justifyContent: 'center'}}>
+        <ActivityIndicator size="large" color="#0389FF" />
+      </View>
+    )
+  }
 
   return (
     <>

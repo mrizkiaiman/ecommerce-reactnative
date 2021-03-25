@@ -47,8 +47,8 @@ const AppNavigator = () => {
           options={({route}) => ({
             headerShown: true,
             title:
-              route.params && route.params.category
-                ? route.params.category.name
+              route.params && route.params.categoryName
+                ? route.params.categoryName
                 : route.params.keyword,
           })}
         />

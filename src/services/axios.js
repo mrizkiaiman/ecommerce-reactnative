@@ -4,7 +4,7 @@ const local = 'http://192.168.0.110:3001'
 const deployed = 'https://shonenplaysmobile-api.herokuapp.com'
 
 const instance = axios.create({
-  baseURL: local,
+  baseURL: deployed,
 })
 
 // const get = instance.get

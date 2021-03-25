@@ -7,7 +7,10 @@ import {tailwind} from '../../../../style/tailwind'
 export default ({category}) => {
   const navigation = useNavigation()
   const navigateToProducts = () => {
-    navigation.navigate('Products', {categoryId: category._id})
+    navigation.navigate('Products', {
+      categoryId: category._id,
+      categoryName: category.name,
+    })
   }
   return (
     <TouchableOpacity onPress={navigateToProducts} style={styles.mainContainer}>

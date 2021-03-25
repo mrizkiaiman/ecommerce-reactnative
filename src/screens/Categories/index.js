@@ -11,7 +11,10 @@ import {StaticContext} from '../../contexts'
 export default ({navigation}) => {
   const {allCategories} = useContext(StaticContext)
   const navigateToProducts = () =>
-    navigation.navigate('Products', {categoryId: category._id})
+    navigation.navigate('Products', {
+      categoryId: category._id,
+      categoryName: category.name,
+    })
 
   return (
     <ScrollView style={styles.mainContainer}>
